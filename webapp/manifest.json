@@ -65,27 +65,30 @@
 				}
 			}
 		},
-		"routing" : {
-			"config" : {
-				"routerClass" : "sap.m.routing.Router",
-				"viewType" : "XML",
-				"viewPath" : "routing.view.View1",
-				"controlId" : "idApp",
-				"controlAggregation" : "pages",
-				"transition" : "slide"
-			},
-			"routes" : [{
-				"pattern" : "",
-				"name" : "",
-				"target" : ""
-			}],
-			"targets" : {
-				"home" : {
-					"viewName" : "Home",
-					"viewLevel" : ""
-				}
-			}
-		},
+		
+		
+	"routing": {
+         "config": {
+            "routerClass": "sap.m.routing.Router",
+            "viewType": "XML",
+            "viewPath": "routing.view",
+            "controlId": "app",
+            "controlAggregation": "pages",
+            "transition": "slide"
+         },
+         "routes": [{
+            "pattern": "",
+            "name": "appHome",
+            "target": "home"
+         }],
+         "targets": {
+            "home": {
+               "viewName": "Home",
+               "viewLevel" : 1
+            }
+         }
+      },
+		
 		
 		"resources": {
 			"css": [{
